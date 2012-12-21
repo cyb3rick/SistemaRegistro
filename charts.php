@@ -18,12 +18,55 @@
 	else {
 	?>
 	<!-- show stats and the coolest search box -->
+	
 	<div class="row">
 		<div class="span12">
 			<h1 id="tabs">Miembros</h1>
-			<hr>			
+			<ul class="nav nav-tabs">
+		        <li class="active"><a href="#A" data-toggle="tab">Activos</a></li>
+		        <li><a href="#B" data-toggle="tab">Inactivos</a></li>
+		        <li><a href="#C" data-toggle="tab">Graduados</a></li>
+      		</ul>
+			<div class="tabbable">
+		        <div class="tab-content">
+					<div class="tab-pane active" id="A">
+		            	<p>I'm in Section A.</p>
+		          	</div>
+					<div class="tab-pane" id="B">
+						<p>Howdy, I'm in Section B.</p>
+					</div>
+					<div class="tab-pane" id="C">
+			        	<p>What up girl, this is Section C.</p>
+			        </div>
+				</div>
+			</div> <!-- /.tabbable -->
 		</div><!-- /.span12 -->		
 	</div><!-- /.row -->
+	<div class="row">
+		<div class="span12">
+			<h1 id="tabs">Miembros</h1>
+			<ul class="nav nav-tabs">
+		        <li class="active"><a href="#A" data-toggle="tab">Activos</a></li>
+		        <li><a href="#B" data-toggle="tab">Inactivos</a></li>
+		        <li><a href="#C" data-toggle="tab">Graduados</a></li>
+      		</ul>
+			<div class="tabbable">
+		        <div class="tab-content">
+					<div class="tab-pane active" id="A">
+		            	<p>I'm in Section A.</p>
+		          	</div>
+					<div class="tab-pane" id="B">
+						<p>Howdy, I'm in Section B.</p>
+					</div>
+					<div class="tab-pane" id="C">
+			        	<p>What up girl, this is Section C.</p>
+			        </div>
+				</div>
+			</div> <!-- /.tabbable -->
+		</div><!-- /.span12 -->		
+	</div><!-- /.row -->
+	
+	
 			
 	<!-- Main hero unit for a primary marketing message or call to action -->
 	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
