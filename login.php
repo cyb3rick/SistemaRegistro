@@ -34,7 +34,7 @@ if ( empty($_POST) === false ) {
 		echo "<div class='alert'>";
     	echo $errors[0] . "<button type='button' class='close' data-dismiss='alert'> × </button>"; // print first logged error    	
     	echo "</div>";
-    	echo "<a href='.' class='btn btn-large'>~ Back home</a>";
+    	echo "<a href='.' class='btn btn-large'><i class=\"icon-chevron-left icon-white\"></i> Back home</a>";
 	
 	}
 }

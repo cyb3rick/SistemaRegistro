@@ -22,7 +22,7 @@
 				  		?>
 				  		<li class="dropdown">
 				  			<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-				  				<span class="label label-info"><?php echo strtolower($user_data['username']); ?></span> <b class="caret"></b>
+				  				<span class=""><?php echo strtolower($user_data['username']); ?></span> <b class="caret"></b>
 				  			</a>
 				         <ul class="dropdown-menu"><!-- TODO: modify all these links for specific user -->
 				         	<li><a href="user-settings.php">General Settings</a></li>
@@ -30,7 +30,7 @@
 				            <li><a href="logout.php">Log Out</a></li>
 				            <li class="divider"></li>
 				            <li class="nav-header">Store</li><!-- TODO: get stores with $user_id equal to $user_data['user_id'] -->
-				            <li><a href="store.php?bid=<?php echo business_id_from_name($business_data['name']); ?>" class="link"><?php echo $business_data['name']; ?></a></li>
+				            <li><a href="#" class="link">Something</a></li>
 				         </ul>
 						</li>
 						<?php
@@ -38,10 +38,12 @@
 					?>				  			
 		         </ul> 
 		         <?php include 'core/functions/search.php'; ?>
+		         <!-- 
 				   	<form class="navbar-form pull-right" method="GET" action="sleek_search.php">				   		
             			<input value="<?php echo $_GET['search_term']; ?>" name="search_term" class="search-query" type="Search" placeholder="Search..." id="searchBox" />
             			
 					</form>
+					-->
 				</div><!-- ENDS nav-collapse-->
 			</div><!-- ENDS container -->
       </div><!-- ENDS navbar-inner -->
