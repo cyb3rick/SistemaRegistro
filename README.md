@@ -1,0 +1,3 @@
+SistemaRegistro
+===============
+SistemaRegistro es, como el nombre sugiere, un sistema para registrar. Creado especificamente para el ministerio de educación de la Iglesia Bautista de Glenview, sirve para remplazar el viejo modo de registrar estudiantes y mantener su progreso académico. Con este proyecto se busca agilizar el proceso a la vez que se reduce el espacio de archivo y el gasto excesivo de papel.
