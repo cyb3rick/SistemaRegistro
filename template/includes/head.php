@@ -6,13 +6,17 @@
     <meta name="author" content="">
 
     <!-- Le styles -->
-    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/bootswatch.css" rel="stylesheet">
     <link href="assets/css/datepicker.css" rel="stylesheet">
-    <style type="text/css">	
     
+    <style type="text/css">	
+
 	body {
 		padding-top: 60px;
         padding-bottom: 40px;
+        
+        
 	}
   
   	

@@ -20,7 +20,7 @@
 	<!-- show stats and the coolest search box -->
 	<div class="row">
 		<div class="span12">
-			<h1>Miembros</h1>
+			<h1 id="tabs">Miembros</h1>
 			<br />		
 			<br />		
 		</div><!-- /.span12 -->		
