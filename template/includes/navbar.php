@@ -11,6 +11,7 @@
 				<ul class="nav">
 					<li><a href="reports.php">Reportes</a></li>
 					<li><a href="search.php">Buscar</a></li>
+					<li><a href="courses.php">Clases</a></li>
 					<!-- 
 		         	<li><a href="about.php">About</a></li>
 		           	<li><a href="contact.php">Contact</a></li>

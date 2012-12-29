@@ -2,20 +2,9 @@
 <?php include 'template/header.php' ?>
 <?php include 'template/includes/widgets/login_modal.php' ?> <!-- login modal -->
 
-
 <?php 
-	if (!logged_in()) {
-	?>
-	
-	<form class="form-signin" action="login.php" method="post">
-		<h2 class="form-signin-heading">Please sign in</h2>
-        <input type="text" name="username" class="input-block-level" placeholder="Username">
-        <input type="password" name="password" class="input-block-level" placeholder="Password">
-        
-        <button type="submit" name="submit" class="btn btn-large btn-block btn-primary">Sign in</button>
-	</form>
-	<?php
-	}
+	/* If not logged in, show login box instead. */
+	if (!logged_in()) { include 'template/includes/widgets/login_box.php'; }
 	else {
 	?>
 	<!-- show stats and the coolest search box -->
@@ -34,7 +23,7 @@
 				</form>-->
 			
 				 <form>
-					<label>Nombre, Apellido, Direccion, Telefono o Celular...</label>
+					<label>Nombre, apellido, teléfono o celular...</label>
 					<input type="text" class="input-block-level" id="inputString" onkeyup="lookup(this.value);" style="font-size:36px;height:50px;" />        
 				</form>						
 			</div>

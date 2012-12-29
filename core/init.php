@@ -4,8 +4,9 @@ session_start();
 
 require 'database/connect.php';
 require 'functions/users.php';
-//require 'functions/businesses.php';
-//require 'functions/categories.php';
+require 'functions/students.php';
+require 'functions/courses.php';
+require 'functions/teachers.php';
 //require 'functions/sales.php';
 
 if (logged_in()) {
