@@ -4731,6 +4731,10 @@ a.badge:hover {
 .badge-success {
   background-color: #ffffff;
 }
+.label-primary,
+.badge-primary {
+  background-color: rgb(15, 130, 245);;
+}
 .label-success[href],
 .badge-success[href] {
   background-color: #e6e6e6;

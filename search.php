@@ -10,20 +10,13 @@
 	<!-- show stats and the coolest search box -->
 	<div class="row">
 		<div class="span12">
-			<h1>Búsqueda Rápida</h1>
+			<h1>B&#250;squeda R&#225;pida</h1>
 			<br />		
 			<br />
 			<div class="span2"></div>
 			<div class="span8">
-				<!--<form id="searchform">
-					<div>
-						What are you looking for? <input type="text" size="30" value="" id="inputString" onkeyup="lookup(this.value);" />
-					</div>
-					<div id="suggestions"></div>
-				</form>-->
-			
 				 <form>
-					<label>Nombre, apellido, teléfono o celular...</label>
+					<label>Nombre, apellido, tel&#233;fono o celular...</label>
 					<input type="text" class="input-block-level" id="inputString" onkeyup="lookup(this.value);" style="font-size:36px;height:50px;" />        
 				</form>						
 			</div>

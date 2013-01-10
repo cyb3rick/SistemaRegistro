@@ -33,16 +33,16 @@
 	      google.setOnLoadCallback(drawChart);
 	      function drawChart() {
 	        var data = google.visualization.arrayToDataTable([
-	          ['Año', 'Activos', 'Inactivos', 'Graduandos'],
-	          ['2008',  1000,      400,			125],
+	          ['Año', 'Activos', 'Inactivos', 'Graduandos'],	          
+	          ['2008',  22000,      400,			125],
 	          ['2009',  1170,      460,			425],
 	          ['2010',  660,       1120,			455],
 	          ['2011',  1030,      540,			525]
 	        ]);
 	
 	        var options = {
-	          title: 'Miembros del Instituto Bíblico',
-	          hAxis: {title: 'Año', titleTextStyle: {color: 'red'}}
+	          title: 'Miembros del Instituto B&#237;blico',
+	          hAxis: {title: 'A&#241;o', titleTextStyle: {color: 'red'}}
 	        };
 	
 	        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));

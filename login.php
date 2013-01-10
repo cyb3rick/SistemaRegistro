@@ -8,13 +8,13 @@ if ( empty($_POST) === false ) {
 	$password = $_POST['password'];
 	
 	if (empty($username) === true || empty($password) === true) {
-		$errors[] = 'You need to enter a username and password';
+		$errors[] = 'Necesita entrar un nombre de usuario y contrase&#241;a.';
 	}
 	else if (user_exists($username) === false) {
-		$errors[] = 'We can\'t find your username in our database. Did you register?';
+		$errors[] = 'No existe este nombre de ususario.';
 	}
 	else if ( ($login = login($username, $password)) === false ) {
-		$errors[] = 'That username/password combination could NOT be found.';		
+		$errors[] = 'No provey&#243; la contrase&#241;a correcta.';		
 	}
 	else {
 		//echo $login;
@@ -30,11 +30,11 @@ if ( empty($_POST) === false ) {
 	
 	if (!empty($errors)) {
 		
-		echo "<h2>Sorry, we tried logging you in but...</h2>";
+		echo "<h2>Disculpe pero...</h2>";
 		echo "<div class='alert'>";
-    	echo $errors[0] . "<button type='button' class='close' data-dismiss='alert'> × </button>"; // print first logged error    	
+    	echo $errors[0] . "<button type='button' class='close' data-dismiss='alert'><button type='button' class='close' data-dismiss='alert'> <i class=icon-remove></i> </button>"; // print first logged error    	
     	echo "</div>";
-    	echo "<a href='.' class='btn btn-large'><i class=\"icon-chevron-left icon-white\"></i> Back home</a>";
+    	echo "<a href='.' class='btn btn-large'><i class=\"icon-chevron-left icon-white\"></i> Back</a>";
 	
 	}
 }

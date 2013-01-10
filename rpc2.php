@@ -14,7 +14,7 @@
 			
 			// Is the string length greater than 0?
 			if(strlen($queryString) >0) {
-				$query = $db->query("SELECT first_name, middle_name, last_name, email, phone, cellphone FROM Students WHERE first_name LIKE '%". $queryString . "%' OR last_name LIKE '%". $queryString . "%' OR email LIKE '%". $queryString . "%' OR phone LIKE '%". $queryString . "%' OR cellphone LIKE '%". $queryString . "%' OR middle_name LIKE '%". $queryString . "%' ORDER BY last_name LIMIT 8");
+				$query = $db->query("SELECT sid, first_name, middle_name, last_name, email, phone, cellphone FROM Students WHERE first_name LIKE '%". $queryString . "%' OR last_name LIKE '%". $queryString . "%' OR email LIKE '%". $queryString . "%' OR phone LIKE '%". $queryString . "%' OR cellphone LIKE '%". $queryString . "%' OR middle_name LIKE '%". $queryString . "%' ORDER BY last_name LIMIT 8");
 				
 				
 				if($query) {
@@ -47,13 +47,13 @@
 						echo "<td>".$result->phone."</td>";
 						echo "<td>".$result->cellphone."</td>";
 						echo "<td>".$result->email."</td>";
-						echo "<td><a href='#'>Edit</a></td>";
+						echo "<td><a href='students.php?sid=".$result->sid."'>Edit</a></td>";
 						echo "</tr>";
 	         		}
 	         		
 	         		echo "<tr class='success'><td><strong>Teachers</strong></td><td></td><td></td><td></td><td></td></tr>";
 	         		
-	         		$query = $db->query("SELECT first_name, middle_name, last_name, email, phone, cellphone FROM Teachers WHERE first_name LIKE '%". $queryString . "%' OR last_name LIKE '%". $queryString . "%' OR email LIKE '%". $queryString . "%' OR phone LIKE '%". $queryString . "%' OR cellphone LIKE '%". $queryString . "%' OR middle_name LIKE '%". $queryString . "%' ORDER BY last_name LIMIT 8");
+	         		$query = $db->query("SELECT tid, first_name, middle_name, last_name, email, phone, cellphone FROM Teachers WHERE first_name LIKE '%". $queryString . "%' OR last_name LIKE '%". $queryString . "%' OR email LIKE '%". $queryString . "%' OR phone LIKE '%". $queryString . "%' OR cellphone LIKE '%". $queryString . "%' OR middle_name LIKE '%". $queryString . "%' ORDER BY last_name LIMIT 8");
 	         		while ($result = $query ->fetch_object()) {
 	         			$name = $result->first_name . ' ' . $result->last_name;
 	         			if(strlen($name) > 35) {

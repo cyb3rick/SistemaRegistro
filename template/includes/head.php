@@ -1,7 +1,8 @@
 <head>
-    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />    
     <title>IBG | Sistema de Registro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -14,7 +15,7 @@
     <style type="text/css">	
     
 	body {
-		padding-top: 60px;
+		/*padding-top: 60px;*/
         padding-bottom: 40px;
 	}
 

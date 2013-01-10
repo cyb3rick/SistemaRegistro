@@ -10,7 +10,7 @@
 	<!-- show stats and the coolest search box -->
 	<div class="row">
 		<div class="span12">
-			<h1 id="tabs">Miembros</h1>
+			<h1 id="tabs">Reportes</h1>
 			<br />		
 			<br />		
 		</div><!-- /.span12 -->		
@@ -30,16 +30,16 @@
 	        ]);
 	
 	        var options = {
-	          title: 'Miembros del Instituto Bíblico',
-	          hAxis: {title: 'Año', titleTextStyle: {color: 'red'}}
+	          title: 'Miembros del Instituto Biblico',
+	          hAxis: {title: 'Ano', titleTextStyle: {color: 'red'}}
 	        };
 	
 	        var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
 	        chart.draw(data, options);
 	      }
 	</script>
-	<div class="row">
-		<div class="span12" style="height:300px;" id="chart_div"></div>
+	<div class="row">		
+		<div class="span12" style="margin-left:0; height:300px;" id="chart_div"></div>		
 	</div><!-- ends hero-unit -->
 	
 	<div class="row">
@@ -54,9 +54,9 @@
           	<p><a class="btn" href="#">View details &raquo;</a></p>
        	</div>
         <div class="span4">
-          	<h2>Graduados</h2>
-          	<p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          	<p><a class="btn" href="#">View details &raquo;</a></p>
+          	<h2>Graduandos</h2>
+          	<p>Estudiantes con menos de 2 cursos restantes por graduarse.</p>
+          	<p><a class="btn" href="seniors.php">Ver Lista &raquo;</a></p>
         </div>
 	</div><!-- ends row -->
 	<?php

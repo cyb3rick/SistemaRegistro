@@ -36,22 +36,19 @@ function get_days() {
 	return $days_list;
 }
 
-function get_current_semester() {	
-	$current_month = date('m', time());	
+function amount_of_courses_per_level($level) {
 	
-	// IMPORTANT: We return 1 or 2 because those are the 
-	// id's assumed for semesters. If the Semesters table
-	// were to change we'd have to do an update of these
-	// id's to represent the right semester. TODO: query 
-	// this id's directly from the database.
-	return ($current_month < 8) ? 1 : 2;	
+	$query = mysql_query("SELECT COUNT(cid) AS cnt FROM Courses WHERE level='$level';");	
+	$result = mysql_fetch_array($query);
+	return $result['cnt']; // count
 }
 
-function get_current_year() {	
-	return date('Y', time());
+// TODO: check validity of $sec_id
+function get_course_from_section($sec_id) {
+	$query = mysql_query("SELECT c.name as cname, c.description as cdesc 
+							FROM Courses c, Sections s 
+								WHERE c.cid=s.cid AND s.sec_id='$sec_id';");
+	return mysql_fetch_assoc($query);	
 }
-
-
-
 
 ?>
